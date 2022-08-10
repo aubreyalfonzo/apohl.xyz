@@ -62,7 +62,7 @@ function setup() {
 function draw() {
 	background(200);
 
-	orbitControl();
+	orbitControl(1, 1, 0);
 	
 	let mv = sin(frameCount*.005)*2;
 
@@ -113,6 +113,7 @@ function draw() {
 	endShape();
 
 	push();
+	orbitControl(0, 0, 0);
 	texture(img3);
 	rotate(radians(frameCount*.05));
 	rotateX(mouseX/width);
