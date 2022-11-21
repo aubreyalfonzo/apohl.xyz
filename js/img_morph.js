@@ -60,7 +60,7 @@ function setup() {
 }
 
 function draw() {
-	background(200);
+	// background(200);
 
 	orbitControl(1, 1, 0);
 	
@@ -118,13 +118,13 @@ function draw() {
 	rotate(radians(frameCount*.05));
 	rotateX(mouseX/width);
 	rotateY(mouseY/height);
-	if(windowWidth > windowHeight){
-	sphere(width/2);
-	}else{
-		if(windowWidth < windowHeight){
-			sphere(height);
-		}
-	}
+	// if(windowWidth > windowHeight){
+	// sphere(width/2);
+	// }else{
+	// 	if(windowWidth < windowHeight){
+	// 		sphere(height);
+	// 	}
+	// }
 	pop();
 
 
