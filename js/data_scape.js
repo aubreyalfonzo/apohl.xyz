@@ -12,7 +12,7 @@ function setup() {
   // myCanv.parent("jsCont");
 
   frameRate(10);
-  background(0);
+  // background(0);
 
   
   // noFill();
