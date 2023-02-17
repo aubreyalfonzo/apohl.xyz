@@ -21,8 +21,8 @@ function setup() {
 }
 
 function draw() {
-  // background(220);
-  normalMaterial();
+  background(220);
+  // normalMaterial();
   
   translate(0, height / 2.2);
 	rotateY(PI / 1.335);
