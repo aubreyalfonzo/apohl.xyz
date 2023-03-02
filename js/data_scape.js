@@ -11,17 +11,19 @@ function setup() {
   let myCanv = createCanvas(windowWidth, windowHeight, WEBGL);
   // myCanv.parent("jsCont");
 
-  frameRate(10);
+  frameRate(15);
+  background(220, 220, 220);
   // background(0);
 
   
   // noFill();
   // strokeWeight(.1);
+  stroke(200);
 
 }
 
 function draw() {
-  background(220);
+  // background(220, 220, 220);
   // normalMaterial();
   
   translate(0, height / 2.2);
