@@ -1,0 +1,164 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+		<title>TITLE</title>
+	
+	<!-- TO MAKE A PAGE IN THIS FOLDER, USE: -->
+	<link rel="stylesheet" href="../css/stylesheet.css">
+
+	<!-- TO MAKE A PAGE IN THE SEMESTER FOLDER, COPY AND PAST THISE PAGE INTO IT AND USE: -->
+	<link rel="stylesheet" href="../../css/stylesheet.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	
+	<div class="contFrame">
+
+		<div class="header">
+				<a href>COURSE TITLE / SEMESTER / SECTION</a>
+			</div>
+
+			<!-- <iframe class="js-cont" srolling="no" src="../js-cont/js-soon.html"></iframe> -->
+
+		<!-- //////////////////////// FULL CONTAINER //////////////////////// -->
+		<!-- <div class="fullCont"></div> -->
+
+
+
+		<!-- //////////////////////// INFO CONTAINER //////////////////////// -->
+		<div class="collapsible">INFO</div>
+		<div class="infoCont">
+			<h2>INFO</h2>
+			<p>
+				COURSE TITLE<br>
+				WHEN:<br>
+				WHERE:<br>
+			</p>
+			  <a class="pageL" target="_blank" href="https://canvas.msstate.edu/">CANVAS.MSSTATE.EDU</a>
+				<!-- <a class="pageL" target="_blank" href="">SYLLABUS</a> -->
+			<hr class="a">
+			<p>
+				INSTRUCTOR:<br>
+				AUBREY POHL<br>
+				APOHL@CAAD.MSSTATE.EDU<br>
+				STAFFORD 211<br>
+			</p>
+				<a class="pageL" target="_blank" href="https://apohl.ch/">APOHL.CH</a>
+			<h2>NEWS</h2>
+
+			<h2>PROJECT LIST</h2>
+
+			<h2>INSPO</h2>
+
+			<h2>COMPETITIONS</h2>
+
+			<h2>MISC RESOURCES</h2>
+
+			<div class="espace"></div><div class="espace"></div>
+		</div>
+
+
+		<!-- //////////////////////// MAIN CONTAINER //////////////////////// -->
+		<div class="mainCont">
+			<h2>CURRENT PROJECT(S)</h2>
+
+			<h2>FEATURED OUTPUTS</h2>
+
+			<h2>PROJECTS ARCHIVE</h2>
+
+			<h2>SYLLABUS</h2>
+
+			<div class="espace"></div>
+		</div>
+
+		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!-- <script>
+var coll = document.getElementsByClassName("collapsible3");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script> -->
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("imgSlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+	</div>
+
+<!-- </div> -->
+
+</body>
+	
+
+</html>
