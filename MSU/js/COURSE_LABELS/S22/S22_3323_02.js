@@ -30,5 +30,5 @@ function draw() {
 }
 
 function mousePressed(){
-	window.open("https://apohl.ch/msu/spring_22/3323_02_S_22");
+	window.open("https://apohl.xyz/MSU/msu/spring_22/3323_02_S_22");
 }
