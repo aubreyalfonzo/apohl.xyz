@@ -83,8 +83,12 @@ a.inline{
 
 a.anchor{
 	color: #f2f2f2;
+	margin: 0;
+	padding: 0;
 	font-size: 22pt;
-	/*background-color: #cccccc;*/
+	text-justify: inter-word;
+	margin: 0;
+	/*background-color: #f15a24;*/
 }
 
 a:hover{
@@ -93,8 +97,8 @@ a:hover{
 }
 
 a.anchor:hover{
-	color: #ff00ff;
-	/*background-color: #f2f2f2;*/
+	color: #f2f2f2;
+	background-color: #ff00ff;
 }
 
 hr.a{
@@ -111,6 +115,11 @@ iframe{
 	position: relative;
 	width: 100vw;
 	height: 50vh;
+}
+
+mark {
+  background-color: transparent;
+  color: #f2f2f2;
 }
 
 #jsCont{
@@ -139,7 +148,6 @@ iframe{
 
 /* /////////////////////// CUSTOM DIVS ////////////////////// */
 
-
 .contFrame{
 	position: fixed;
 	overflow: hidden;
@@ -159,7 +167,7 @@ iframe{
 	height: auto;
 	display: grid;
 	grid-template-columns: 5vh auto auto auto 5vh;
-	grid-template-rows: minmax(5vh, auto);
+	grid-template-rows: auto;
 	max-height: 100vh;
   	overflow-y: scroll;
   	grid-auto-flow: dense;
@@ -168,14 +176,15 @@ iframe{
 
 .cont_grid_item{
 	display: inline-block;
+	margin: 0;
+	padding: 0;
 	width: auto;
-	min-height: auto;
-	max-height: 1fr;
+	height: auto;
 	background: #0000ff;
-	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
 	border-style: dashed;
+	border-width: thin;
 	border-color: #ff00ff;
 }
 
@@ -203,6 +212,7 @@ iframe{
 	position: relative;
 	margin: 0;
 	border-style: none;
+	background-color: #0000ff;
 	/*width: 75vw !important;*/
 	/*height: 100%;*/
 }
@@ -211,13 +221,12 @@ iframe{
 .collapsible{
 	border-style: none;
 	margin: 0;
-	padding-left: 5px;
+	/*padding-left: 5px;*/
 	display: block;
 	position: relative;
-	left: 0;
 	float: all;
 	width: auto;
-	min-width: 1fr;
+	/*min-width: 1fr;*/
 	text-align: justify;
 	text-justify: inter-word;
 	font-family: 'Roboto Mono', monospace;
@@ -233,7 +242,6 @@ iframe{
 	padding-left: 5px;
 	display: inline-block;
 	position: relative;
-	left: 0;
 	float: all;
 	width: inherit;
 	text-align: justify;
@@ -313,6 +321,11 @@ iframe{
 
 @media screen and (max-width:  1200px){
 
+mark {
+  background-color: #0000ff;
+  color: #f2f2f2;
+}
+
 ::-webkit-scrollbar {
 	display: none;
 
@@ -326,6 +339,10 @@ iframe{
 	grid-template-rows: minmax(5vh, auto);
 	max-height: 100vh;
   	overflow-y: scroll;
+}
+
+.cont_grid_item{
+	background-color: transparent;
 }
 
 .empty_grid_item{
@@ -366,7 +383,7 @@ h3{
 @media screen and (max-width:  600px){
 
 	a.anchor{
-		font-size: 5vw;
+		font-size: 20pt;
 	}
 
 
