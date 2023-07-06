@@ -37,7 +37,7 @@ h1{
 h2{
 	text-align: left;
 	font-family: 'Roboto Mono', monospace;
-	color: #0000ff;
+	color: #ff00ff;
 	margin: 0;
 	/*background-color: #e6e6e6;*/
 	/*background-color: rgb(150, 150, 255);*/
@@ -124,6 +124,11 @@ mark {
   color: #f2f2f2;
 }
 
+img.navi{
+	width: 5vh;
+	height: 5vh;
+}
+
 
 #jsCont{
 	position: fixed;
@@ -154,26 +159,30 @@ mark {
 .contFrame{
 	position: fixed;
 	overflow: hidden;
-	width: 100vw;
+	top: 5vh;
+	left: 5vh;
+	bottom: 5vh;
+	right: 5vh;
+	width: auto;
 	height: auto;
-	min-height: 1080px;
-	max-height: 100vh;
-	border-style: none;
+	border-style: dashed;
+	border-width: thin;
+	border-color: #ff00ff;
 }
 
 
 .cont_grid{
-	position: fixed;
+	position: relative;
 	margin: 0;
 	padding: 0;
 	/*top: 5vh;
 	bottom: 5vh;*/
-	width: 100vw;
+	width: auto;
 	height: auto;
 	display: grid;
 	grid-template-columns: 5vh auto auto auto 5vh;
 	grid-template-rows: auto;
-	max-height: 100vh;
+	max-height: 100%;
   	overflow-y: scroll;
   	grid-auto-flow: dense;
 
@@ -321,6 +330,33 @@ mark {
 	background-color: #f2f2f2;
 }
 
+.home, .info, .misc, .misc2{
+	position: fixed; background-color: #00ff00;
+	width: 5vh;
+	height: 5vh;
+
+}
+
+.home{
+	left: 0;
+}
+
+.info{
+	right: 0;
+}
+
+.misc{
+	left: 0;
+	bottom: 0;
+
+}
+
+.misc2{
+	right: 0;
+	bottom: 0;
+
+}
+
 
 /* /////////////////// MEDIUM SCREEN  ////////////////////// */
 
@@ -336,13 +372,18 @@ mark {
 
 }
 
+.contFrame{
+	left: 0;
+	right: 0;
+}
+
 .cont_grid{
 	width: 100vw;
 	height: auto;
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto;
-	max-height: 100vh;
+	/*max-height: 100vh;*/
   	overflow-y: scroll;
 }
 
