@@ -38,7 +38,7 @@ h1{
 h2{
 	text-align: left;
 	font-family: 'Roboto Mono', monospace;
-	color: #ff00ff;
+	color: #0000ff;
 	margin: 0;
 	font-size: 20pt;
 	position: relative;
@@ -68,6 +68,19 @@ a{
 	font-size: 12pt;
 	color: #ff00ff;
 	cursor: url(../data/assets/cursor-01.png), auto !important;
+}
+
+.egg{
+	text-align: left;
+	font-family: 'Roboto Mono', monospace;
+	color: #0000ff;
+	/*background-color: #e6e6e6;*/
+	font-size: 25pt;
+	position: relative;
+}
+
+.egg:hover{
+	color: #ff00ff;
 }
 
 
@@ -237,16 +250,21 @@ iframe{
 .collapsible2{
 	border-style: none;
 	margin-bottom: 10px;
-	padding-left: 5px;
+	padding-right: 5px;
+	/*padding-left: 5px;*/
 	display: inline-block;
 	position: relative;
+	width: 50%;
+	left: 50%;
+	margin: auto;
 	float: all;
-	width: inherit;
-	text-align: justify;
 	text-justify: inter-word;
 	font-family: 'Roboto Mono', monospace;
 	color: #f2f2f2;
 	font-size: 15pt;
+	text-align: right;
+	border-radius: 10px;
+	background: #ff00ff;
 }
 
 /*.collapsible:hover{
@@ -255,8 +273,29 @@ iframe{
 }*/
 
 .collapsible2:hover{
-	color: #ff00ff;
+	color: #0000ff;
 	/*background-color: #f2f2f2;*/
+}
+
+.plus, .minus{
+	/*display: none;*/
+	position: relative;
+	float: all;
+	width: 5vh;
+	height: 5vh;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding: 1vh;
+
+}
+
+.plus{
+	display: block;
+}
+
+.minus{
+	display: none;
 }
 
 .imageScroll{
@@ -414,6 +453,15 @@ iframe{
 	left: 0;
 	width: 95vw;
 	height: auto;
+}
+
+.egg{
+	color: #0000ff;
+	background: #ff00ff;
+}
+
+.egg:hover{
+	color: #0000ff;
 }
 
 
