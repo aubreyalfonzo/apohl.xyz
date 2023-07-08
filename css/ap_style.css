@@ -180,7 +180,7 @@ iframe{
 	padding: 0;
 	width: auto;
 	height: auto;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
 	/*grid-template-rows: auto;*/
 	max-height: 100%;
   	overflow-y: scroll;
@@ -227,8 +227,8 @@ iframe{
 	margin: 0;
 	border-style: none;
 	background-color: #0000ff;
+	height: auto;
 	/*overflow-y: scroll;*/
-	/*width: 75vw !important;*/
 	/*height: 100%;*/
 }
 
@@ -305,7 +305,7 @@ iframe{
 	overflow-x: scroll;
 	overflow-y: hidden;
 	/*z-index: 1;*/
-	height: 70vh;
+	height: auto;
 	width: auto;
 	background-color: #f2f2f2;
 
@@ -387,6 +387,7 @@ iframe{
 	color: #ff00ff;
 	font-size: 10pt;
 	position: absolute;
+	float: all;
 }
 
 
@@ -433,7 +434,6 @@ iframe{
 .empty_grid_item{
 	display: none;
 }
-
 
 .imageScroll{
 	/*margin: auto;*/

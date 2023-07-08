@@ -31,7 +31,7 @@
 
     <!-- NAV ITEMS -->
 
-    <div class="label" style="left: 44vw; top: 17px; text-align: center;">apohl.xyz</div>
+    <div class="label" style="left: 200px; top: 17px; text-align: left;">apohl.xyz</div>
 
     <div class="home"><a href="index.html"><img class="navi" src="data/assets/ap_nav-06.png"></a></div>
     <div class="label" style="left: 50px; top: 17px;"><< home</div>
@@ -45,7 +45,7 @@
     <div class="shop"><img class="navi" src="data/assets/ap_nav-09.png"></div>
     <div class="label" style="right: 50px; bottom: 17px; text-align: right;">shop >></div>
 
-    <div class="label" style="left: 44vw; bottom: 17px; text-align: center;">apohl.xyz</div>
+    <div class="label" style="right: 200px; bottom: 17px; text-align: right;">apohl.wip</div>
 
     <div class="contFrame">
 	<div class="cont_grid">
@@ -1156,9 +1156,11 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     var activeCollapsible = document.querySelector(".collapsible.active");
+
     if (activeCollapsible && activeCollapsible !== this) {
       activeCollapsible.classList.toggle("active");
       activeCollapsible.nextElementSibling.style.display = "none";
+      activeCollapsible.parentElement.style.width = "";
     }
     
     this.classList.toggle("active");
@@ -1170,6 +1172,7 @@ for (i = 0; i < coll.length; i++) {
       if (img) {
         img.style.display = "block";
         img2.style.display = "none";
+         this.parentElement.style.width = "";
     }
     } else {
       content.style.display = "block";
@@ -1178,20 +1181,13 @@ for (i = 0; i < coll.length; i++) {
       if (img) {
         img.style.display = "none";
         img2.style.display = "block";
+        this.parentElement.style.width = "70vw";
+      }
+
+      if (width < 1200){
+        this.parentElement.style.width = "";
       }
     }
-
-    // var img = document.getElementByClassName("plus");
-    // var img2 = document.getElementByClassName("minus");
-
-    // if (activeCollapsible.classList.toggle("active")){
-    //     img.style.display = "block";
-    //     img2.style.display = "none";
-    // }else{
-    //     img.style.display = "none";
-    //     img2.style.display = "block";
-    // }
-
 
   });
 }
