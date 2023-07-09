@@ -309,7 +309,7 @@ iframe{
 	height: 70vh;
 	width: auto;
 	background-color: #f2f2f2;
-	background-image: url("https://i.imgur.com/vD9FH6k.gif");
+	background-image: url("https://i.imgur.com/NHirouY.gif");
 
 }
 
@@ -326,6 +326,7 @@ iframe{
 .scrollImg{
 	width: auto;
 	height: auto;
+	background: #f2f2f2;
 	max-height: 70vh;
 	max-width: 70vh;
 }
