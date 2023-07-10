@@ -2,21 +2,24 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
-let butt;
+let img;
+
+function preload(){
+	img = loadImage("https://i.imgur.com/NHirouY.gif");
+}
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
-	butt = createButton('GRAYSCALE');
-	butt.position(width/2, height-25);
-	// butt.mousePressed(buttPress);
-	imageMode(CENTER);
+	
+	// imageMode(CENTER, CENTER);
+	
+	
 	
 }
 
 function draw(){
-	butt.mousePressed(buttPress);
-}
-
-function buttPress() {
-	filter(GRAY);
+	background(0, 255);
+	
+	
+	image(img, mouseX, mouseY);
 }
