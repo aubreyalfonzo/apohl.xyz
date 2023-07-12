@@ -13,9 +13,9 @@ function ease(iVal, oVal, eVal){
 // 	img = loadImage("https://i.imgur.com/0wBoDBy.gif");
 // }
 
-// let r = 242; let g = 242; let b = 242;
+let r = 242; let g = 242; let b = 242;
 
-// let bgd = 242;
+let bgd = 242;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -35,10 +35,10 @@ function draw() {
 
 	// background(bgd, 25);
 
-	// r=map(mouseX,0,width,242,255);
- //  	g=map(mouseX,0,width,242,200);
- //  	b=map(mouseY,0,width,242,150);
- //  	background(r,g,b, 25);
+	r=map(mouseX,0,width,242,255);
+  	g=map(mouseX,0,width,242,200);
+  	b=map(mouseY,0,width,242,150);
+  	background(r,g,b, 25);
 
 	let f = 100 + sin(frameCount*.05)*50;
 	

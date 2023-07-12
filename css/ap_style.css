@@ -22,8 +22,8 @@ body{
 	/*cursor: pointer;*/
 	cursor: url(../data/assets/curs.png), auto !important;
 	/*z-index: 1;*/
-
 }
+
 
 h1{
 	text-align: left;
@@ -48,9 +48,10 @@ h3{
 	text-align: left;
 	font-family: 'Roboto Mono', monospace;
 	color: #0000ff;
-	font-size: 20pt;
+	font-size: 25pt;
 	/*font-weight: 200;*/
 	position: relative;
+	margin: auto;
 }
 
 
@@ -103,14 +104,15 @@ iframe{
 
 ::-webkit-scrollbar {
 	background: #0000ff;
-	height: 8px;
-	width: 8px;
+	height: auto;
+	width: 12px;
 	/*display: none;*/
 
 }
 
 ::-webkit-scrollbar-thumb {
 	background: #ff00ff;
+	border-radius: 5px;
 	/*border-radius: 10px;*/
 	/*display: none;*/
 
@@ -118,6 +120,17 @@ iframe{
 
 ::-webkit-scrollbar-corner {
 	background: #0000ff;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+  background-image: url(../data/assets/right.png);
+}
+::-webkit-scrollbar-button:horizontal:start:decrement {
+  background-image: url(../data/assets/left.png);
+}
+::-webkit-scrollbar-button:horizontal:end:increment,
+::-webkit-scrollbar-button:horizontal:start:decrement {
+  display: block;
 }
 
 
@@ -131,7 +144,7 @@ iframe{
 	/*display: block;*/
 	/*background-color: #4B4B4B;*/
 	/*background-color: rgb(0, 0, 0);*/
-	cursor: url(../data/assets/curs.png), auto !important;
+	
 }
 
 .anchor{
@@ -141,12 +154,14 @@ iframe{
 	padding: 0;
 	font-size: 5vh;
 	line-height: 1.1;
+	/*text-align: center;*/
 	/*background-color: #f15a24;*/
 }
 
 .anchor:hover{
 	color: #f2f2f2;
 	background-color: #ff00ff;
+	/*cursor: url(../data/assets/ap_nav-22.png), auto !important;*/
 }
 
 .navi{
@@ -174,7 +189,7 @@ iframe{
 }
 
 
-.cont_grid{
+.cont_grid, .shop_grid{
 	display: grid;
 	position: relative;
 	margin: 0;
@@ -190,7 +205,7 @@ iframe{
 
 }
 
-.cont_grid_item{
+.cont_grid_item, .shop_grid_item{
 	display: inline-block;
 	margin: 0;
 	padding: 0;
@@ -200,8 +215,14 @@ iframe{
 	background: #0000ff;
 	overflow: hidden;
 	border-style: dashed;
+	/*border-left-style: : dashed;*/
+	/*border-bottom-style: dashed;*/
 	border-width: thin;
 	border-color: #ff00ff;
+}
+
+.shop_grid{
+	grid-template-columns: auto auto;
 }
 
 
@@ -210,15 +231,17 @@ iframe{
 	width: auto;
 	height: 5vh;
 	border-style: dashed;
-	border-color: #ff00ff;
+	border-width: thin;
+	/*border-bottom-style: dashed;*/
+	border-color: #0000ff;
 }
 
 .empty_grid_item_2{
 	display: none;
 	width: auto;
 	height: 5vh;
-	border-style: dashed;
-	border-color: #ff00ff;
+	/*border-left-style: dashed;*/
+	border-color: #0000ff;
 }
 
 
@@ -226,11 +249,25 @@ iframe{
 	display: none;
 	position: relative;
 	margin: 0;
-	border-style: none;
+	border-top-style: dashed;
+	border-color: #ff00ff;
 	background-color: #0000ff;
 	height: auto;
+
 	/*overflow-y: scroll;*/
 	/*height: 100%;*/
+}
+
+.shop_img{
+	margin: auto;
+	padding: 5%;
+	vertical-align: middle;
+  	width: 100%;
+  	/*background-image: url("https://i.imgur.com/NHirouY.gif");*/
+}
+
+.swipe_img{
+	display: none;
 }
 
 
@@ -249,23 +286,23 @@ iframe{
 }
 
 .collapsible2{
-	border-style: none;
-	margin-bottom: 10px;
+	border-style: solid;
+	border-color: #ff00ff;
+	border-width: medium;
 	padding-right: 5px;
-	/*padding-left: 5px;*/
 	display: inline-block;
 	position: relative;
 	width: 50%;
 	left: 50%;
-	margin: auto;
+	/*margin: auto;*/
 	float: all;
 	text-justify: inter-word;
 	font-family: 'Roboto Mono', monospace;
 	color: #f2f2f2;
 	font-size: 15pt;
 	text-align: right;
-	border-radius: 10px;
-	background: #ff00ff;
+	border-radius: 7px;
+	/*background: #ff00ff;*/
 }
 
 /*.collapsible:hover{
@@ -275,6 +312,8 @@ iframe{
 
 .collapsible2:hover{
 	color: #0000ff;
+	background: #ff00ff;
+	cursor: url(../data/assets/ap_nav-22.png), auto !important;
 	/*background-color: #f2f2f2;*/
 }
 
@@ -310,6 +349,8 @@ iframe{
 	width: auto;
 	background-color: #f2f2f2;
 	background-image: url("https://i.imgur.com/NHirouY.gif");
+	/*cursor: url(../data/assets/ap_nav-23.png), auto !important;*/
+	white-space: nowrap;
 
 }
 
@@ -390,6 +431,30 @@ iframe{
 
 }
 
+.banner, .banner2{
+	width: 50vw;
+	/*top: 0;*/
+	left: 25vw;
+	right: 25vw;
+	/*height: 5vh;*/
+	position: fixed;
+	border-left: dashed thin;
+	border-right: dashed thin;
+	border-color: #0000ff;
+}
+
+.banner{
+	top: 0;
+}
+
+.banner2{
+	bottom: 0;
+}
+
+.banner:hover, .banner2:hover{
+	background-color: #f2f2f2;
+}
+
 .label{
 	font-family: 'Roboto Mono', monospace;
 	color: #ff00ff;
@@ -443,6 +508,15 @@ iframe{
 	display: none;
 }
 
+.swipe_img{
+	display: block;
+	position: relative;
+	float: right;
+	width: 79;
+	height: 15;
+	background: transparent;
+}
+
 .imageScroll{
 	/*margin: auto;*/
 	width: 100vw;
@@ -478,6 +552,15 @@ iframe{
 /* /////////////////// SMALL SCREEN  ////////////////////// */
 
 @media screen and (max-width:  600px){
+
+	.anchor{
+		font-size: 4.5vh;
+		padding: 2px;
+	}
+
+	.shop_grid{
+	grid-template-columns: auto;
+}
 
 
 }
