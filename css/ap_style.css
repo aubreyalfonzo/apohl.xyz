@@ -546,6 +546,10 @@ iframe{
 	color: #0000ff;
 }
 
+.text_div2{
+	width: 40vw;
+}
+
 
 }	
 
@@ -562,5 +566,8 @@ iframe{
 	grid-template-columns: auto;
 }
 
+.text_div2{
+	width: auto;
+}
 
 }
