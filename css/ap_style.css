@@ -530,11 +530,7 @@ iframe{
 }
 
 .text_div2{
-	position: relative;
-	float: all;
-	left: 0;
-	width: 95vw;
-	height: auto;
+	width: 85vw;
 }
 
 .egg{
@@ -544,10 +540,6 @@ iframe{
 
 .egg:hover{
 	color: #0000ff;
-}
-
-.text_div2{
-	width: 40vw;
 }
 
 
@@ -567,7 +559,7 @@ iframe{
 }
 
 .text_div2{
-	width: 100vw;
+	width: 80vw;
 }
 
 }
