@@ -480,17 +480,17 @@ iframe{
 	background: transparent;
 }
 
+.shop_anchor:hover{
+	background: #ff00ff;
+}
+
 .cont_grid_item, .shop_grid_item, .info_grid_item{
 	margin: auto;
 	width: 70vw;
 }
 
-.info_grid_item{
-	background: #00ff00;
-}
-
 .info_grid_item:hover{
-	background: transparent;
+	background: #00ff00;
 }
 
 .empty_grid_item{
