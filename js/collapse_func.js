@@ -38,10 +38,10 @@ for (i = 0; i < coll.length; i++) {
         img2.style.display = "block";
         this.parentElement.style.width = "70vw";
         this.parentElement.style.height = "auto";
-      }
 
-      if (width < 1200){
+        if (width < 1200){
         this.parentElement.style.width = "100vw";
+      }
       }
     }
 
@@ -62,7 +62,7 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "none";
     } else {
       content.style.display = "block";
-      this.parentElement.style.width = "100vw";
+      this.parentElement.style.width = "";
     }
   });
 }

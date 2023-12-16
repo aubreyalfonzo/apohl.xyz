@@ -136,17 +136,6 @@ iframe{
 
 /* /////////////////////// CUSTOM DIVS ////////////////////// */
 
-.inline{
-	text-decoration: none;
-	display: block;
-	color: #808080;
-	font-size: 4vh;
-	/*display: block;*/
-	/*background-color: #4B4B4B;*/
-	/*background-color: rgb(0, 0, 0);*/
-	
-}
-
 .anchor, .shop_anchor{
 	color: #f2f2f2;
 	display: flex;
@@ -202,7 +191,6 @@ iframe{
 	width: auto;
 	height: auto;
 	grid-template-columns: 1fr 1fr 1fr;
-	/*grid-template-rows: auto;*/
 	max-height: 100%;
   	overflow-y: scroll;
   	overflow-x: hidden;
@@ -263,9 +251,11 @@ iframe{
 	position: relative;
 	margin: 0;
 	overflow-y: scroll;
+	overflow-x: hidden;
 	border-style: dashed;
 	border-color: #ff00ff;
 	border-width: thin;
+	width: 50vw;
 	height: 50vh;
 	padding: 5px;
 }
@@ -303,7 +293,6 @@ iframe{
 	font-size: 15pt;
 	text-align: right;
 	border-radius: 7px;
-	/*background: #ff00ff;*/
 }
 
 
@@ -477,11 +466,12 @@ iframe{
 	right: 0;
 }
 
+
 .cont_grid, .shop_grid, .info_grid{
 	width: 100vw;
 	height: auto;
 	/*display: grid;*/
-	grid-template-columns: auto;
+	grid-template-columns: 100vw;
   	overflow-y: scroll;
 }
 
@@ -495,8 +485,20 @@ iframe{
 	width: 70vw;
 }
 
+.info_grid_item{
+	background: #00ff00;
+}
+
+.info_grid_item:hover{
+	background: transparent;
+}
+
 .empty_grid_item{
 	display: none;
+}
+
+.infoCont{
+	width: 100vw;
 }
 
 .swipe_img{
