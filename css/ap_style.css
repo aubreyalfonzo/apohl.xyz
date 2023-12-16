@@ -87,7 +87,7 @@ a{
 
 a:hover{
 	color: #0000ff;
-	/*background-color: #333333;*/
+	/*background-color: #ff00ff;*/
 }
 
 
@@ -147,21 +147,26 @@ iframe{
 	
 }
 
-.anchor{
+.anchor, .shop_anchor{
 	color: #f2f2f2;
 	display: flex;
 	margin: 0;
 	padding: 0;
-	font-size: 5vh;
-	line-height: 1.1;
-	/*text-align: center;*/
-	/*background-color: #f15a24;*/
+	font-size: 25pt;
+	/*font-size: 4vh;*/
+	/*line-height: 1.1;*/
 }
+
 
 .anchor:hover{
 	color: #f2f2f2;
 	background-color: #ff00ff;
 	/*cursor: url(../data/assets/ap_nav-22.png), auto !important;*/
+}
+
+.shop_anchor:hover{
+	color: #f2f2f2;
+	background-color: #0000ff;
 }
 
 .navi{
@@ -189,7 +194,7 @@ iframe{
 }
 
 
-.cont_grid, .shop_grid{
+.cont_grid, .shop_grid, .info_grid{
 	display: grid;
 	position: relative;
 	margin: 0;
@@ -205,13 +210,13 @@ iframe{
 
 }
 
-.cont_grid_item, .shop_grid_item{
+.cont_grid_item, .shop_grid_item, .info_grid_item{
 	display: inline-block;
 	margin: 0;
 	padding: 0;
 	/*min-width: 20vh;*/
 	width: auto;
-	height: auto;
+	height: minmax(5vh, auto);
 	background: #0000ff;
 	overflow: hidden;
 	border-style: dashed;
@@ -221,8 +226,18 @@ iframe{
 	border-color: #ff00ff;
 }
 
-.shop_grid{
-	grid-template-columns: auto auto;
+.shop_grid_item{
+	background: #ff00ff;
+	border-color: #0000ff;
+}
+
+.info_grid_item{
+	background: #00ff00;
+	border-color: #0000ff;
+}
+
+.info_grid_item:hover{
+	background: #ff00ff;
 }
 
 
@@ -233,14 +248,6 @@ iframe{
 	border-style: dashed;
 	border-width: thin;
 	/*border-bottom-style: dashed;*/
-	border-color: #0000ff;
-}
-
-.empty_grid_item_2{
-	display: none;
-	width: auto;
-	height: 5vh;
-	/*border-left-style: dashed;*/
 	border-color: #0000ff;
 }
 
@@ -258,12 +265,14 @@ iframe{
 	/*height: 100%;*/
 }
 
-.shop_img{
-	margin: auto;
-	padding: 5%;
-	vertical-align: middle;
-  	width: 100%;
-  	/*background-image: url("https://i.imgur.com/NHirouY.gif");*/
+.infoCont{
+	position: relative;
+	margin: 0;
+	overflow-y: scroll;
+	border-style: dashed;
+	border-color: #ff00ff;
+	/*background-color: #ffffff;*/
+	height: 57.5vh;
 }
 
 .swipe_img{
@@ -484,7 +493,7 @@ iframe{
 	right: 0;
 }
 
-.cont_grid{
+.cont_grid, .shop_grid, .info_grid{
 	width: 100vw;
 	height: auto;
 	display: grid;
@@ -497,11 +506,11 @@ iframe{
 	background: transparent;
 }
 
-.cont_grid_item{
+.cont_grid_item, .shop_grid_item, .info_grid_item{
 	margin: auto;
-	background: transparent;
-	background: #0000ff;
-
+	width: 70vw;
+	/*background: transparent;*/
+	/*background: #0000ff;*/
 }
 
 .empty_grid_item{
@@ -549,14 +558,10 @@ iframe{
 
 @media screen and (max-width:  600px){
 
-	.anchor{
-		font-size: 4.5vh;
+	.anchor, .shop_anchor{
+		font-size: 4vh;
 		padding: 2px;
 	}
-
-	.shop_grid{
-	grid-template-columns: auto;
-}
 
 .text_div2{
 	width: 80vw;

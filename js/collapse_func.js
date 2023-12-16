@@ -39,7 +39,7 @@ for (i = 0; i < coll.length; i++) {
       }
 
       if (width < 1200){
-        this.parentElement.style.width = "";
+        this.parentElement.style.width = "100vw";
       }
     }
 
