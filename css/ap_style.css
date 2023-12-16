@@ -215,7 +215,7 @@ iframe{
 	margin: 0;
 	padding: 0;
 	width: auto;
-	height: minmax(5vh, auto);
+	height: 5vh;
 	background: #0000ff;
 	overflow: hidden;
 	border-style: dashed;

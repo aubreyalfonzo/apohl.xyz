@@ -27,6 +27,7 @@ for (i = 0; i < coll.length; i++) {
         img.style.display = "block";
         img2.style.display = "none";
          this.parentElement.style.width = "";
+         this.parentElement.style.height = "";
     }
     } else {
       content.style.display = "block";
@@ -36,6 +37,7 @@ for (i = 0; i < coll.length; i++) {
         img.style.display = "none";
         img2.style.display = "block";
         this.parentElement.style.width = "70vw";
+        this.parentElement.style.height = "auto";
       }
 
       if (width < 1200){
