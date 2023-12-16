@@ -152,7 +152,7 @@ iframe{
 	display: flex;
 	margin: 0;
 	padding: 0;
-	font-size: 25pt;
+	font-size: 3vh;
 	/*font-size: 4vh;*/
 	/*line-height: 1.1;*/
 }
@@ -272,7 +272,8 @@ iframe{
 	border-style: dashed;
 	border-color: #ff00ff;
 	/*background-color: #ffffff;*/
-	height: 57.5vh;
+	height: 50vh;
+	padding: 5px;
 }
 
 .swipe_img{
@@ -355,7 +356,7 @@ iframe{
 	overflow-y: hidden;
 	/*z-index: 1;*/
 	height: 70vh;
-	width: auto;
+	width: 100%;
 	background-color: #f2f2f2;
 	background-image: url("https://i.imgur.com/NHirouY.gif");
 	/*cursor: url(../data/assets/ap_nav-23.png), auto !important;*/
@@ -559,7 +560,7 @@ iframe{
 @media screen and (max-width:  600px){
 
 	.anchor, .shop_anchor{
-		font-size: 4vh;
+		font-size: 3vh;
 		padding: 2px;
 	}
 
