@@ -60,6 +60,7 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "none";
     } else {
       content.style.display = "block";
+      this.parentElement.style.width = "100vw";
     }
   });
 }

@@ -214,14 +214,11 @@ iframe{
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-	/*min-width: 20vh;*/
 	width: auto;
 	height: minmax(5vh, auto);
 	background: #0000ff;
 	overflow: hidden;
 	border-style: dashed;
-	/*border-left-style: : dashed;*/
-	/*border-bottom-style: dashed;*/
 	border-width: thin;
 	border-color: #ff00ff;
 }
@@ -260,9 +257,6 @@ iframe{
 	border-color: #ff00ff;
 	background-color: #0000ff;
 	height: auto;
-
-	/*overflow-y: scroll;*/
-	/*height: 100%;*/
 }
 
 .infoCont{
@@ -271,7 +265,7 @@ iframe{
 	overflow-y: scroll;
 	border-style: dashed;
 	border-color: #ff00ff;
-	/*background-color: #ffffff;*/
+	border-width: thin;
 	height: 50vh;
 	padding: 5px;
 }
@@ -288,9 +282,7 @@ iframe{
 	position: relative;
 	float: all;
 	width: auto;
-	/*height: 5vh;*/
-	/*text-align: justify;
-	text-justify: inter-word;*/
+	height: 5vh;
 	font-family: 'Roboto Mono', monospace;
 	overflow: hidden;
 }
@@ -304,7 +296,6 @@ iframe{
 	position: relative;
 	width: 50%;
 	left: 50%;
-	/*margin: auto;*/
 	float: all;
 	text-justify: inter-word;
 	font-family: 'Roboto Mono', monospace;
@@ -315,20 +306,14 @@ iframe{
 	/*background: #ff00ff;*/
 }
 
-/*.collapsible:hover{
-	color: #333333;
-	background-color: #e6e6e6;
-}*/
 
 .collapsible2:hover{
 	color: #0000ff;
 	background: #ff00ff;
 	cursor: url(../data/assets/ap_nav-22.png), auto !important;
-	/*background-color: #f2f2f2;*/
 }
 
 .plus, .minus{
-	/*display: none;*/
 	position: relative;
 	float: all;
 	width: 5vh;
@@ -351,10 +336,8 @@ iframe{
 .imageScroll{
 	display: flex;
 	position: relative;
-	/*overflow-y: scroll;*/
 	overflow-x: scroll;
 	overflow-y: hidden;
-	/*z-index: 1;*/
 	height: 70vh;
 	width: 100%;
 	background-color: #f2f2f2;
@@ -497,7 +480,7 @@ iframe{
 .cont_grid, .shop_grid, .info_grid{
 	width: 100vw;
 	height: auto;
-	display: grid;
+	/*display: grid;*/
 	grid-template-columns: auto;
   	overflow-y: scroll;
 }
@@ -510,8 +493,6 @@ iframe{
 .cont_grid_item, .shop_grid_item, .info_grid_item{
 	margin: auto;
 	width: 70vw;
-	/*background: transparent;*/
-	/*background: #0000ff;*/
 }
 
 .empty_grid_item{
