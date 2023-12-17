@@ -206,7 +206,7 @@ iframe{
 	height: 5vh;
 	background: #0000ff;
 	overflow: hidden;
-	border-style: dashed;
+	border-bottom-style: dashed;
 	border-width: thin;
 	border-color: #ff00ff;
 }
@@ -257,7 +257,7 @@ iframe{
 	border-width: thin;
 	width: 50vw;
 	height: 50vh;
-	padding: 5px;
+	padding: 10px;
 }
 
 .swipe_img{
@@ -310,6 +310,7 @@ iframe{
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-left: auto;
+	white-space: nowrap;
 	padding: 1vh;
 
 }
