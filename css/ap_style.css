@@ -378,7 +378,8 @@ iframe{
 	float: all;
 	left: 4vw;
 	width: 50vw;
-	height: 50vh;
+	min-height: auto;
+	max-height: 50vh;
 	overflow-y: scroll;
 	background-color: #f2f2f2;
 }
