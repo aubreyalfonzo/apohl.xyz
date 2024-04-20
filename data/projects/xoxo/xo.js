@@ -85,17 +85,17 @@ function draw() {
 
 	if(width > 1080){
 	xoxo[index].resize(width/2, 0);
-	xo1[index1].resize(width/10, 0);
-	xo2[index2].resize(width/10, 0);
-	xo3[index3].resize(width/10, 0);
-	xo4[index4].resize(width/10, 0);
+	xo1[index1].resize(width/7, 0);
+	xo2[index2].resize(width/7, 0);
+	xo3[index3].resize(width/7, 0);
+	xo4[index4].resize(width/7, 0);
 }else{
 	if(width < 1080){
 	xoxo[index].resize(width, 0);
-	xo1[index1].resize(width/5, 0);
-	xo2[index2].resize(width/5, 0);
-	xo3[index3].resize(width/5, 0);
-	xo4[index4].resize(width/5, 0);
+	xo1[index1].resize(width/3, 0);
+	xo2[index2].resize(width/3, 0);
+	xo3[index3].resize(width/3, 0);
+	xo4[index4].resize(width/3, 0);
 
 	}
 }
