@@ -48,7 +48,7 @@ function preload(){
 	xo4[1] = loadImage("https://i.imgur.com/Mq7Aukg.png");
 	xo4[2] = loadImage("https://i.imgur.com/rOazsuP.png");
 	xo4[3] = loadImage("https://i.imgur.com/wcRusG3.png");
-	
+
 
 	// for(let a = 0; a < xoxo.length; a++){
 	// 	xoxo[a] = loadImage('data/xoxo/' + a + '.png');
@@ -75,6 +75,8 @@ function preload(){
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	imageMode(CENTER);
+	textAlign(CENTER, CENTER);
+	textSize(15);
 	
 }
 
@@ -105,6 +107,8 @@ function draw() {
 	image(xo2[index2], width-xo1[index1].width, xo1[index1].height);
 	image(xo3[index3], width-xo1[index1].width, height-xo1[index1].height);
 	image(xo4[index4], xo1[index1].width, height-xo1[index1].height);
+
+	text('click/tap to view logos!' ,width/2, height-25);
 	
 }
 
