@@ -77,6 +77,7 @@ function setup() {
 	imageMode(CENTER);
 	textAlign(CENTER, CENTER);
 	textSize(15);
+	pixelDensity(3);
 	
 }
 
