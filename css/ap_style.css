@@ -98,8 +98,8 @@ a:hover{
 iframe{
 	border-style: none;
 	position: relative;
-	width: 94vw;
-	height: 90vh;
+	width: 100%;
+	height: 100%;
 }
 
 /*iframe{
