@@ -98,9 +98,16 @@ a:hover{
 iframe{
 	border-style: none;
 	position: relative;
+	width: 93vw;
+	height: 100vh;
+}
+
+/*iframe{
+	border-style: none;
+	position: relative;
 	width: 100vw;
 	height: 50vh;
-}
+}*/
 
 ::-webkit-scrollbar {
 	background: #0000ff;
@@ -334,6 +341,7 @@ iframe{
 	background-image: url("https://i.imgur.com/NHirouY.gif");
 	/*cursor: url(../data/assets/ap_nav-23.png), auto !important;*/
 	white-space: nowrap;
+	z-index: 5;
 
 }
 
@@ -453,6 +461,11 @@ iframe{
 /* /////////////////// MEDIUM SCREEN  ////////////////////// */
 
 @media screen and (max-width:  1200px){
+
+iframe{
+	width: 100vw;
+	height: 100vh;
+}
 
 .highlight {
   	background-color: #0000ff;
