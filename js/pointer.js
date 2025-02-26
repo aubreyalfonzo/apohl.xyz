@@ -36,8 +36,8 @@ function draw() {
 	// background(bgd, 25);
 
 	r=map(mouseX,0,width,242,255);
-  	g=map(mouseX,0,width,242,200);
-  	b=map(mouseY,0,width,242,150);
+  	g=map(mouseX,0,width,242,225);
+  	b=map(mouseY,0,width,242,200);
   	background(r,g,b, 25);
 
 	let f = 100 + sin(frameCount*.05)*50;
