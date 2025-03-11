@@ -79,14 +79,14 @@ a{
 
 .egg{
 	text-align: left;
-	color: #f2f2f2;
+	color: #cccccc;
 	padding-left: 5px;
 	font-size: 20pt;
 	position: relative;
 }
 
 .egg:hover{
-	color: #f2f2f2;
+	color: #1a1a1a;
 }
 
 
@@ -211,7 +211,7 @@ iframe{
 	padding: 0;
 	width: auto;
 	height: 5vh;
-	background: #CCCCCC;
+	/*background: #E6E6E6;*/
 	overflow: hidden;
 	border-bottom-style: dashed;
 	border-width: thin;
@@ -224,10 +224,11 @@ iframe{
 	display: flex;
 	margin: 0;
 	padding: 0;
+	padding-left: 5px;
 	font-weight: 900;
 	font-size: 3vh;
-	background: #cccccc;
-	border-color: #B3B3B3;
+	background: #E6E6E6;
+	opacity: 90%;
 }
 
 .info_grid_item:hover{
@@ -260,7 +261,7 @@ iframe{
 .infoCont{
 	position: relative;
 	margin: 0;
-	/*overflow-y: scroll;*/
+	background-color: #FFFEFC;
 	overflow-x: hidden;
 	border-style: dashed;
 	border-color: #B3B3B3;
@@ -280,6 +281,8 @@ iframe{
 	margin: 0;
 	display: block;
 	position: relative;
+	background: #E6E6E6;
+	opacity: 90%;
 	float: all;
 	width: auto;
 	height: 5vh;
@@ -287,9 +290,9 @@ iframe{
 }
 
 .collapsible2{
-	border-style: solid;
+	border-style: dashed;
 	border-color: #B3B3B3;
-	border-width: medium;
+	border-width: thin;
 	padding-right: 5px;
 	display: inline-block;
 	position: relative;
@@ -298,6 +301,7 @@ iframe{
 	float: all;
 	text-justify: inter-word;
 	color: #f2f2f2;
+	background-color: #666666;
 	font-size: 15pt;
 	text-align: right;
 	border-radius: 7px;
@@ -339,7 +343,7 @@ iframe{
 	height: 70vh;
 	width: 100%;
 	background-color: #f2f2f2;
-	background-image: url("https://i.imgur.com/NHirouY.gif");
+	background-image: url("../data/assets/bird.gif");
 	/*cursor: url(../data/assets/ap_nav-23.png), auto !important;*/
 	white-space: nowrap;
 	z-index: 5;
@@ -377,7 +381,7 @@ iframe{
 	float: all;
 	max-width: 35vw;
 	height: auto;
-	background-color: #f2f2f2;
+	background-color: #FFFEFC;
 }
 
 .text_div2{
@@ -390,7 +394,7 @@ iframe{
 	min-height: auto;
 	max-height: 50vh;
 	overflow-y: scroll;
-	background-color: #f2f2f2;
+	background-color: #FFFEFC;
 }
 
 .work, .info, .misc, .shop{
