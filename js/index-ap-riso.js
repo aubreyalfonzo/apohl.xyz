@@ -25,7 +25,6 @@ function setup() {
 	background(255);
 	createCanvas(windowWidth, windowHeight);
 	pixelDensity(1);
-	frameRate(20);
 	
 	pink = new Riso('fluorescentpink');
 	blue = new Riso('blue');

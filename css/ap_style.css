@@ -211,7 +211,7 @@ iframe{
 	padding: 0;
 	width: auto;
 	height: 5vh;
-	background: #CCCCCC;
+	/*background: #CCCCCC;*/
 	overflow: hidden;
 	border-bottom-style: dashed;
 	border-width: thin;
@@ -491,22 +491,9 @@ iframe{
   	overflow-y: scroll;
 }
 
-.anchor:hover{
-	/*color: #0000ff;*/
-	background: transparent;
-}
-
-.shop_anchor:hover{
-	background: #ff00ff;
-}
-
 .cont_grid_item, .shop_grid_item, .info_grid_item{
 	margin: auto;
 	width: 70vw;
-}
-
-.info_grid_item:hover{
-	background: #00ff00;
 }
 
 .empty_grid_item{

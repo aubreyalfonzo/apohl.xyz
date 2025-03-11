@@ -21,8 +21,8 @@ let obj;
 let img;
 
 function preload() {
-	obj = loadModel('../data/OBJS/4_25_2022.obj', true);
-	img = loadImage('../data/OBJS/textures/81671d1e59ec25a8e57e63c418709d08.jpg')
+	obj = loadModel('https://raw.githubusercontent.com/aubreyalfonzo/apohl.xyz/refs/heads/main/data/OBJS/4_25_2022.obj', true);
+	img = loadImage('https://raw.githubusercontent.com/aubreyalfonzo/apohl.xyz/refs/heads/main/data/OBJS/textures/81671d1e59ec25a8e57e63c418709d08.jpg')
 }
 
 function setup() {
@@ -31,19 +31,20 @@ function setup() {
 
 	frameRate(15);
 	pixelDensity(1);
-	background(220);
+	background(225);
 	// background(0);
 
 
-	// noFill();
+	noFill();
 	// strokeWeight(.1);
 	// stroke(200);
-	noStroke();
+	// noStroke();
+	stroke(0)
 
 }
 
 function draw() {
-	background(220);
+	background(225);
 	// normalMaterial();
 	
 	orbitControl();
@@ -59,6 +60,6 @@ function draw() {
 	scale(10)
 
 	model(obj);
-	texture(img);
+	// texture(img);
 
 }
