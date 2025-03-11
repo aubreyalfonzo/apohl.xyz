@@ -211,7 +211,7 @@ iframe{
 	padding: 0;
 	width: auto;
 	height: 5vh;
-	/*background: #CCCCCC;*/
+	background: #CCCCCC;
 	overflow: hidden;
 	border-bottom-style: dashed;
 	border-width: thin;

@@ -60,6 +60,23 @@ function draw() {
 	scale(10)
 
 	model(obj);
-	// texture(img);
+	// texture(0);
 
+}
+
+function keyPressed(){
+
+	if(key === ' '){
+		texture(img);
+		noStroke();
+	}
+}
+
+function keyReleased(){
+
+	if(key === ' '){
+		// texture(0);
+		noFill();
+		stroke(0);
+	}
 }
