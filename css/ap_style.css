@@ -77,6 +77,11 @@ a{
 	cursor: url(../data/assets/curs.png), auto !important;
 }
 
+a:hover{
+	color: #2869AC;
+	/*background-color: #ff00ff;*/
+}
+
 .egg{
 	text-align: left;
 	color: #cccccc;
@@ -87,12 +92,6 @@ a{
 
 .egg:hover{
 	color: #1a1a1a;
-}
-
-
-a:hover{
-	color: #2869AC;
-	/*background-color: #ff00ff;*/
 }
 
 
@@ -119,7 +118,6 @@ iframe{
 	height: auto;
 	width: 12px;
 	/*display: none;*/
-
 }
 
 ::-webkit-scrollbar-thumb {
@@ -127,7 +125,6 @@ iframe{
 	border-radius: 5px;
 	/*border-radius: 10px;*/
 	/*display: none;*/
-
 }
 
 ::-webkit-scrollbar-corner {
@@ -431,8 +428,9 @@ iframe{
 
 }
 
-.banner, .banner2{
+.banner, .banner2, .menu{
 	width: 50vw;
+	height: 50px;
 	/*top: 0;*/
 	left: 25vw;
 	right: 25vw;
@@ -443,6 +441,41 @@ iframe{
 	border-color: #B3B3B3;
 }
 
+.menu-list{
+	display: none;
+	position: fixed;
+	/*padding: 5%;*/
+	width: 50vw;
+	top: 50px;
+	bottom: 50px;
+	left: 25vw;
+	right: 25vw;
+	height: auto;
+	border-style: dashed;
+	border-width: thin;
+	border-color: #B3B3B3;
+	background: #E6E6E6;
+	opacity: 95%;
+	z-index: 1;
+}
+
+.ml{
+	font-size: 50pt;
+	text-align: center;
+	background-color: #E6E6E6;
+	border-bottom-style: dashed;
+	border-width: thin;
+	border-color: #B3B3B3;
+}
+
+.ml:hover{
+	background-color: #f2f2f2;
+}
+
+.menu{
+	top: 0;
+}
+
 .banner{
 	top: 0;
 }
@@ -451,7 +484,7 @@ iframe{
 	bottom: 0;
 }
 
-.banner:hover, .banner2:hover{
+.banner:hover, .banner2:hover, .menu:hover{
 	background-color: #f2f2f2;
 }
 
