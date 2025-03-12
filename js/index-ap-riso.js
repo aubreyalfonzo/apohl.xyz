@@ -35,6 +35,8 @@ function setup() {
 	pink.fill(255);
 	blue.fill(255);
 	green.fill(255);
+
+	textAlign(CENTER, CENTER);
 	
 	// img.resize(500, 500);
 }
@@ -67,6 +69,10 @@ function draw() {
 	blue.line(width, 0, mouseX, mouseY);
 	pink.line(width, height, mouseX, mouseY);
 	blue.line(0, height, mouseX, mouseY);
+
+	text(mouseX+' x '+mouseY, mouseX, mouseY);
+	text(width/2+' x '+mouseY, width/2, mouseY);
+	text(mouseX+' x '+height/2, mouseX, height/2);
 
 	
 	
