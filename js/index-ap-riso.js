@@ -19,6 +19,7 @@ let green;
 
 function preload(){
 	img = loadImage('https://raw.githubusercontent.com/aubreyalfonzo/apohl.xyz/refs/heads/main/data/assets/ME.png');
+	
 }
 
 function setup() {
