@@ -400,15 +400,33 @@ iframe{
 	position: fixed;
 	width: auto;
 	height: auto;
-	top: 50px;
-	bottom: 50px;
-	right: 50px;
-	left: 50px;
+	padding: 2%;
 	text-align: center;
 	font-size: 300pt;
 	font-weight: 900;
 	color: #333333;
+	z-index: 2;
 	/*background-color: #DEE464;*/
+}
+
+.worklabel{
+	top: 50px;
+	left: 50px;
+}
+
+.infolabel{
+	top: 50px;
+	right: 50px;
+}
+
+.shoplabel{
+	bottom: 50px;
+	right: 50px;
+}
+
+.misclabel{
+	bottom: 50px;
+	left: 50px;
 }
 
 .work, .info, .misc, .shop{
