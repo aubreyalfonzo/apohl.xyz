@@ -395,6 +395,22 @@ iframe{
 	background-color: #FFFEFC;
 }
 
+.worklabel, .infolabel, .shoplabel, .misclabel{
+	display: none;
+	position: fixed;
+	width: auto;
+	height: auto;
+	top: 50px;
+	bottom: 50px;
+	right: 50px;
+	left: 50px;
+	text-align: center;
+	font-size: 300pt;
+	font-weight: 900;
+	color: #333333;
+	/*background-color: #DEE464;*/
+}
+
 .work, .info, .misc, .shop{
 	position: fixed; 
 	background-color: #CCCCCC;
@@ -405,6 +421,11 @@ iframe{
 
 .work:hover, .info:hover, .misc:hover, .shop:hover{
 	background-color: #DEE464;
+
+}
+
+.work:hover + .worklabel, .info:hover + .infolabel, .misc:hover + .misclabel, .shop:hover + .shoplabel{
+	display: block;
 
 }
 
@@ -488,13 +509,6 @@ iframe{
 	background-color: #f2f2f2;
 }
 
-.label{
-	color: #ff00ff;
-	font-size: 10pt;
-	position: absolute;
-	float: all;
-}
-
 
 /* /////////////////// MEDIUM SCREEN  ////////////////////// */
 
@@ -518,6 +532,13 @@ iframe{
 .contFrame{
 	left: 0;
 	right: 0;
+}
+
+.worklabel, .infolabel, .shoplabel, .misclabel{
+	width: 100vw;
+	left: 0;
+	font-size: 100pt;
+
 }
 
 
