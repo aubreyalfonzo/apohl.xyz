@@ -12,14 +12,21 @@ let libs = ['../js/includes/libs/p5.riso.js'];
 // let ditherType = 'floydsteinberg';
 
 let img;
+let gif;
 
 let pink;
 let blue;
 let green;
 
+// let layer;
+
+let x,y;
+
+let flightspeed;
+
 function preload(){
 	img = loadImage('https://raw.githubusercontent.com/aubreyalfonzo/apohl.xyz/refs/heads/main/data/assets/ME.png');
-	
+	gif = loadImage('https://raw.githubusercontent.com/aubreyalfonzo/apohl.xyz/refs/heads/main/data/assets/bird.gif');
 }
 
 function setup() {
@@ -38,6 +45,11 @@ function setup() {
 	green.fill(255);
 
 	textAlign(CENTER, CENTER);
+
+	x = random(width);
+	y = height;
+	
+	flightspeed = -3;
 	
 	// img.resize(500, 500);
 }
@@ -48,12 +60,25 @@ function draw() {
 	blue.background(255, 100);
 	green.background(255, 100);
 
-	img.resize(height/2, 0)
-	
+	img.resize(height/2, 0);
+
 	push();
 	imageMode(CENTER);
+	
+	x = x+flightspeed/2;
+	y = y+flightspeed;
+	
+	if(y == 0){
+		y = height;
+	}else{
+		if(x <= 0){
+			x = width;
+		}
+	}
 	// let dithered1 = ditherImage(img, ditherType, 50);
 	image(img, width/2, height/2);
+	image(gif, x, y);
+	// image(layer, width/2, height/2);
 	pop();
 
 	let shapesize = width/8;
