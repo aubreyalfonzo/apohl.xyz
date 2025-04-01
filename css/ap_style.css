@@ -400,33 +400,22 @@ iframe{
 	position: fixed;
 	width: auto;
 	height: auto;
-	padding: 2%;
+	top: 50px;
+	left: 50px;
+	right: 50px;
+	bottom: 50px;
 	text-align: center;
-	font-size: 300pt;
-	font-weight: 900;
-	color: #333333;
 	z-index: 2;
 	/*background-color: #DEE464;*/
 }
 
-.worklabel{
-	top: 50px;
-	left: 50px;
-}
 
-.infolabel{
-	top: 50px;
-	right: 50px;
-}
+.labelimg{
+	width: auto;
+	height: 100%;
+	/*max-height: 70vh;
+	max-width: 70vh;*/
 
-.shoplabel{
-	bottom: 50px;
-	right: 50px;
-}
-
-.misclabel{
-	bottom: 50px;
-	left: 50px;
 }
 
 .work, .info, .misc, .shop{
@@ -554,8 +543,7 @@ iframe{
 
 .worklabel, .infolabel, .shoplabel, .misclabel{
 	width: 100vw;
-	left: 0;
-	font-size: 100pt;
+	left: -25vw;
 
 }
 
