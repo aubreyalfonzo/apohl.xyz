@@ -37,9 +37,11 @@ function draw() {
 	blue.background(255, 100);
 	green.background(255, 100);
 	
-	pink.ellipse(width/2, mouseY, 200);
-	blue.ellipse(mouseX, height/2, 200);
-	green.ellipse(mouseX, mouseY, 200);
+	let shapesize = width/8;
+	
+	pink.ellipse(width/2, mouseY, shapesize);
+	blue.ellipse(mouseX, height/2, shapesize);
+	green.ellipse(mouseX, mouseY, shapesize);
 	
 	green.line(width/2, mouseY, mouseX, height/2);
 	green.line(mouseX, height/2, mouseX, mouseY);
