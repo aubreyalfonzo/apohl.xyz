@@ -405,6 +405,7 @@ iframe{
 	right: 50px;
 	bottom: 50px;
 	text-align: center;
+	background-color: #f2f2f2;
 	z-index: 2;
 	/*background-color: #DEE464;*/
 }
@@ -541,11 +542,8 @@ iframe{
 	right: 0;
 }
 
-.worklabel, .infolabel, .shoplabel, .misclabel{
-	width: 100vw;
-	left: -25vw;
 
-}
+
 
 
 .cont_grid, .shop_grid, .info_grid{
@@ -594,6 +592,12 @@ iframe{
 	width: 85vw;
 }
 
+.worklabel, .infolabel, .shoplabel, .misclabel{
+	left: 0;
+	right: 0;
+
+}
+
 
 }	
 
@@ -604,6 +608,17 @@ iframe{
 	.anchor, .shop_anchor{
 		font-size: 3vh;
 	}
+
+.worklabel, .infolabel, .shoplabel, .misclabel{
+	left: 0;
+	right: 0;
+
+}
+
+.labelimg{
+	width: 100%;
+	height: auto;
+}
 
 .text_div2{
 	width: 80vw;
