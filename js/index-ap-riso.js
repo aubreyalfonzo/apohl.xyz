@@ -96,9 +96,9 @@ function draw() {
 	pink.line(width, height, mouseX, mouseY);
 	blue.line(0, height, mouseX, mouseY);
 
-	text(mouseX+' x '+mouseY, mouseX, mouseY);
-	text(width/2+' x '+mouseY, width/2, mouseY);
-	text(mouseX+' x '+height/2, mouseX, height/2);
+	text(int(mouseX)+' x '+ int(mouseY), mouseX, mouseY);
+	text(int(width/2)+' x '+ int(mouseY), width/2, mouseY);
+	text(int(mouseX)+' x '+ int(height/2), mouseX, height/2);
 
 	
 	
