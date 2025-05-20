@@ -60,7 +60,7 @@ function draw() {
 	blue.background(255, 100);
 	green.background(255, 100);
 
-	// img.resize(height/2, 0);
+	img.resize(height/2, 0);
 
 	push();
 	imageMode(CENTER);
@@ -75,7 +75,7 @@ function draw() {
 			x = width;
 		}
 	}
-	// image(img, width/2, height/2);
+	image(img, width/2, height/2);
 	// image(gif, x, y);
 	pop();
 
