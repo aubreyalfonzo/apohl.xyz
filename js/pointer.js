@@ -15,10 +15,11 @@ function ease(iVal, oVal, eVal){
 
 let r = 242; let g = 242; let b = 242;
 
-let bgd = 242;
+let bgd = 255;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
+	background(25);
 	
 	noFill();
 	stroke(random(255), random(255), random(255));
@@ -27,18 +28,18 @@ function setup() {
 }
 
 function draw() {
-	background(242, 25);
+	// background(242, 25);
 
 	// if(mouseIsPressed){
 	// 	bgd = random(100, 242);
 	// }
 
-	// background(bgd, 25);
+	background(bgd, 25);
 
-	r=map(mouseX,0,width,242,255);
-  	g=map(mouseX,0,width,242,225);
-  	b=map(mouseY,0,width,242,200);
-  	background(r,g,b, 25);
+	// r=map(mouseX,0,width,242,255);
+ //  	g=map(mouseX,0,width,242,225);
+ //  	b=map(mouseY,0,width,242,200);
+ //  	background(r,g,b, 25);
 
 	let f = 100 + sin(frameCount*.05)*50;
 	

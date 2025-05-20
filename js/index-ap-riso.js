@@ -11,7 +11,7 @@ let libs = ['../js/includes/libs/p5.riso.js'];
 
 // let ditherType = 'floydsteinberg';
 
-let img;
+// let img;
 let gif;
 
 let pink;
@@ -51,7 +51,7 @@ function setup() {
 	
 	flightspeed = -3;
 	
-	img.resize(500, 500);
+	// img.resize(500, 500);
 }
 
 function draw() {
@@ -60,7 +60,7 @@ function draw() {
 	blue.background(255, 100);
 	green.background(255, 100);
 
-	img.resize(height/2, 0);
+	// img.resize(height/2, 0);
 
 	push();
 	imageMode(CENTER);
@@ -75,8 +75,8 @@ function draw() {
 			x = width;
 		}
 	}
-	image(img, width/2, height/2);
-	image(gif, x, y);
+	// image(img, width/2, height/2);
+	// image(gif, x, y);
 	pop();
 
 	let shapesize = width/8;
