@@ -19,7 +19,7 @@ let bgd = 255;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
-	background(25);
+	// background(25);
 	
 	noFill();
 	stroke(random(255), random(255), random(255));
@@ -33,6 +33,8 @@ function draw() {
 	// if(mouseIsPressed){
 	// 	bgd = random(100, 242);
 	// }
+
+	let m = map(mouseX, 0, width, 0, 255);
 
 	background(bgd, 25);
 

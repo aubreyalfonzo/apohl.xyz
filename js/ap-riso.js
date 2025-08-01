@@ -52,6 +52,5 @@ function draw() {
 	pink.line(width, height, mouseX, mouseY);
 	blue.line(0, height, mouseX, mouseY);
 	
-	
 	drawRiso();
 }

@@ -37,7 +37,7 @@ function draw() {
   noStroke();
   fill(200);
   textSize(width/7);
-  text('****HELLO****', width/2, height/5);
-  text('****WORLD****', width/2, height/1.25);
+  // text('****HELLO****', width/2, height/5);
+  // text('****WORLD****', width/2, height/1.25);
   pop();
 }

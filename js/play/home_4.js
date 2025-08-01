@@ -45,7 +45,7 @@ function draw(){
 
 	// push();
 
-	translate(w, h);
+	translate(mouseX, mouseY);
 
 	let rot = mouseX/5+mouseY/5;
 	rotate(radians(rot));

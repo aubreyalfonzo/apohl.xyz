@@ -4,11 +4,8 @@ html{
 	margin:0; padding:0;
 	background-color: #FFFEFC;
 	font-family: "Doto", sans-serif;
-	font-optical-sizing: auto;
-  	/*font-weight: 900;*/
+  font-optical-sizing: auto;
   	font-style: normal;
-  	font-variation-settings:
-    "ROND" 100;
     font-size: 0px;
 	scroll-behavior: smooth;
 	cursor: url(../data/assets/curs.png), auto !important;
@@ -23,12 +20,7 @@ body{
 	margin: 0;
 	overflow: hidden;
 	padding: 0%;
-	font-family: "Doto", sans-serif;
-	font-optical-sizing: auto;
-  	/*font-weight: 900;*/
   	font-style: normal;
-  	font-variation-settings:
-    "ROND" 100;
     font-size: 0px;
 	cursor: url(../data/assets/curs.png), auto !important;
 	/*z-index: 1;*/
@@ -56,9 +48,9 @@ h3{
 	text-align: left;
 	color: #333333;
 	font-size: 30pt;
-	/*font-weight: 200;*/
 	position: relative;
 	margin: auto;
+	font-weight: 900;
 }
 
 
@@ -84,10 +76,11 @@ a:hover{
 
 .egg{
 	text-align: left;
-	color: #cccccc;
+	/*color: #cccccc;*/
 	padding-left: 5px;
 	font-size: 20pt;
 	position: relative;
+	background: #E6E6E6;
 }
 
 .egg:hover{
@@ -186,7 +179,6 @@ iframe{
 	border-color: #B3B3B3;
 }
 
-
 .cont_grid, .info_grid{
 	display: grid;
 	position: relative;
@@ -225,7 +217,7 @@ iframe{
 	font-weight: 900;
 	font-size: 3vh;
 	background: #E6E6E6;
-	opacity: 90%;
+	/*opacity: 90%;*/
 }
 
 .info_grid_item:hover{
@@ -267,6 +259,9 @@ iframe{
 	width: 50vw;
 	height: auto;
 	padding: 10px;
+	font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .swipe_img{
@@ -280,7 +275,7 @@ iframe{
 	display: block;
 	position: relative;
 	background: #E6E6E6;
-	opacity: 90%;
+	opacity: 100%;
 	float: all;
 	width: auto;
 	height: 5vh;
@@ -312,7 +307,7 @@ iframe{
 	cursor: url(../data/assets/ap_nav-22.png), auto !important;
 }
 
-.plus, .minus{
+.plus, .minus, .id{
 	position: relative;
 	float: all;
 	width: 5vh;
@@ -331,6 +326,10 @@ iframe{
 
 .minus{
 	display: none;
+}
+
+.id{
+	display: block;
 }
 
 .imageScroll{
@@ -358,14 +357,17 @@ iframe{
 }*/
 
 
-.scrollImg{
+.scrollImg, .iframeImg{
 	width: auto;
 	height: auto;
-	/*background: #f2f2f2;*/
 	max-height: 70vh;
 	max-width: 70vh;
 }
 
+.iframeImg{
+	width: 100%;
+	height: 100%;
+}
 
 .spacer{
 	position: relative;
@@ -383,16 +385,20 @@ iframe{
 }
 
 .text_div2{
-	padding-left: 5px;
+	padding-left: 4vw;
+	padding-right: 25px;
 	padding-bottom: 5px;
 	position: relative;
 	float: all;
-	left: 4vw;
+	/*left: 4vw;*/
 	width: 50vw;
 	min-height: auto;
 	max-height: 50vh;
 	overflow-y: scroll;
 	background-color: #FFFEFC;
+	font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .worklabel, .infolabel, .shoplabel, .misclabel{
@@ -486,10 +492,11 @@ iframe{
 	background: #E6E6E6;
 	opacity: 95%;
 	z-index: 1;
+	font-weight: 900;
 }
 
 .ml{
-	font-size: 50pt;
+	font-size: 10vh;
 	text-align: center;
 	background-color: #E6E6E6;
 	border-bottom-style: dashed;
@@ -543,9 +550,6 @@ iframe{
 }
 
 
-
-
-
 .cont_grid, .shop_grid, .info_grid{
 	width: 100vw;
 	height: auto;
@@ -583,7 +587,7 @@ iframe{
 }
 
 
-.scrollImg{
+.scrollImg, .iframeImg{
 	width: 100vw;
 	height: 100vw;
 }
