@@ -92,6 +92,10 @@ a:hover{
   box-sizing: border-box;
 }
 
+.resizer{
+	display: none;
+}
+
 iframe{
 	border-style: none;
 	position: relative;
@@ -145,7 +149,7 @@ iframe{
 	margin: 0;
 	padding: 0;
 	padding-left: 5px;
-	font-size: 2.5vh;
+	font-size: 20pt;
 }
 
 
@@ -322,7 +326,6 @@ iframe{
 
 .id{
 	float: left;
-	margin-left: 0;
 }
 
 .plus{
@@ -342,7 +345,7 @@ iframe{
 	position: relative;
 	overflow-x: scroll;
 	overflow-y: hidden;
-	height: 75vh;
+	height: 76.5vh;
 	width: 100%;
 	background-color: #f2f2f2;
 	background-image: url("../data/assets/bird.gif");
@@ -365,7 +368,7 @@ iframe{
 .scrollImg, .iframeImg{
 	width: auto;
 	height: auto;
-	max-height: 75vh;
+	max-height: 76vh;
 	max-width: 75vh;
 }
 
@@ -384,19 +387,19 @@ iframe{
 	padding-left: 5px;
 	position: relative;
 	float: all;
-	max-width: 35vw;
+	max-width: 50%;
 	height: auto;
 	background-color: #FFFEFC;
 }
 
 .text_div2{
 	padding-left: 4vw;
-	padding-right: 25px;
+	padding-right: 50px;
 	padding-bottom: 5px;
 	position: relative;
 	float: all;
 	/*left: 4vw;*/
-	width: 50vw;
+	width: 60vw;
 	min-height: auto;
 	max-height: 50vh;
 	overflow-y: scroll;
@@ -636,3 +639,28 @@ iframe{
 }
 
 }
+
+/* /////////////////// SMALL WINDOW  ////////////////////// */
+
+@media screen and (max-height:  600px){
+
+.contFrame{
+	display: none;
+}
+
+.resizer{
+	display: block;
+	position: fixed;
+	/*padding: 5%;*/
+	border-style: dashed;
+	border-width: thin;
+	text-align: center;
+	top: 40vh;
+	left: 40vw;
+	width: 20vw;
+	height: 20vh;
+	margin: auto;
+	background-color: #f2f2f2;
+}
+
+]
