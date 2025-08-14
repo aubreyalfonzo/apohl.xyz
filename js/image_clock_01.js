@@ -19,7 +19,6 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   pixelDensity(1);
   
-  
   img.resize(width, 0);
   
   img1 = createImage(img.width, img.height);
@@ -29,19 +28,24 @@ function setup() {
   
   textSize(width/9.5);
   fill(255);
+  noStroke();
   // stroke(0);
   textAlign(CENTER, CENTER);
   
   imageMode(CENTER);
-  
+
 }
 
 function draw() {
   let s = second();
   let m = minute();
   let h = hour();
+
+  // let col = 200 + h, 200 + m, 200 + s;
   
   background(200 + h, 200 + m, 200 + s);
+
+  fill(200 + h, 200 + m, 200 + s);
 
 
   for(let y = 0; y < img.height; y++) {
@@ -66,6 +70,11 @@ function draw() {
   if(height > width){
     textSize(height/9.5);
   }
+
+  rect(0, 0, width, 50);
+  rect(0, height-50, width, 50);
+  rect(0, 0, 50, height);
+  rect(width-50, 0, 50, height);
   
 }
 
