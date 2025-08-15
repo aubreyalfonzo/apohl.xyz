@@ -508,7 +508,7 @@ iframe{
 .ml{
 	font-size: 10vh;
 	text-align: center;
-	color: #e9519d;
+	color: #1a1a1a;
 	background-color: #E6E6E6;
 	border-bottom-style: dashed;
 	border-width: thin;
@@ -517,7 +517,7 @@ iframe{
 
 .ml:hover{
 	background-color: #f2f2f2;
-	color: #2869ac;
+	color: #e9519d;
 }
 
 .menu{

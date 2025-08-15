@@ -27,7 +27,7 @@ function setup() {
   img1.loadPixels();
   
   textSize(width/9.5);
-  fill(255);
+  // fill(255);
   noStroke();
   // stroke(0);
   textAlign(CENTER, CENTER);
@@ -40,6 +40,10 @@ function draw() {
   let s = second();
   let m = minute();
   let h = hour();
+
+  let sec = nf(s, 2);
+  let min = nf(m, 2);
+  let hou = nf(h, 2);
 
   // let col = 200 + h, 200 + m, 200 + s;
   
@@ -65,7 +69,7 @@ function draw() {
   
   image(img1, width/2, height/2);
   
-  text(h + ':' + m + ':' + s, width/2, height/2);
+  text(hou + ':' + min + ':' + sec, width/2, height/2);
   
   if(height > width){
     textSize(height/9.5);
