@@ -45,6 +45,8 @@ function draw() {
   let sec = nf(s, 2);
   let min = nf(m, 2);
   let hou = nf(h, 2);
+
+  fill(200 + h, 200 + m, 200 + s);
   
   background(200 + h, 200 + m, 200 + s);
 
