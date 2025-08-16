@@ -90,21 +90,21 @@ function draw() {
   }
   
   push();
-  fill(255);
+  fill(200 + h, 200 + m, 200 + s);
   translate(width/2, height/2);
-  stroke(255);
+  stroke(200 + h, 200 + m, 200 + s);
   strokeWeight(2);
   rotate(radians(map(s, 0, 60, 0, 360)));
   line(0, 0, 0, -width/4, 25);
   pop();
   push();
-  fill(255);
+  fill(200 + h, 200 + m, 200 + s);
   translate(width/2, height/2);
   rotate(radians(map(m, 0, 60, 0, 360)));
   rect(0, -width/4+25, 25);
   pop();
   push();
-  fill(255);
+  fill(200 + h, 200 + m, 200 + s);
   translate(width/2, height/2);
   rotate(radians(map(h, 0, 12, 0, 360)));
   ellipse(0, -width/4+50, 25);
