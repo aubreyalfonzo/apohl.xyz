@@ -321,11 +321,14 @@ iframe{
 	margin-left: auto;
 	white-space: nowrap;
 	padding: 1vh;
-
 }
 
 .id{
+	display: block;
 	float: left;
+	padding: 0;
+	width: 2.5vh;
+	height: 2.5vh;
 }
 
 .plus{
@@ -334,10 +337,6 @@ iframe{
 
 .minus{
 	display: none;
-}
-
-.id{
-	display: block;
 }
 
 .imageScroll{

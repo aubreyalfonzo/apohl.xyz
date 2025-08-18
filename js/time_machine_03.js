@@ -163,16 +163,16 @@ function draw() {
 
 function keyPressed() {
 
-  s = second();
-  m = minute();
-  h = hour();
+  // s = second();
+  // m = minute();
+  // h = hour();
 
-  sec = nf(s, 2);
-  min = nf(m, 2);
-  hou = nf(h, 2);
+  // sec = nf(s, 2);
+  // min = nf(m, 2);
+  // hou = nf(h, 2);
 
   if(key === ' ') {
-    save('TIME_MACHINE_TEST_01_' + hou + '_' + min + '_' + sec);
-    img1.save('TIME_MACHINE_TEST_01_IMG');
+    save('TIME_MACHINE_TEST_03_' + hou + '_' + min + '_' + sec + '_' + da + '_' + mo + '_' + yr);
+    img1.save('TIME_MACHINE_TEST_03_IMG_ONLY_' + hou + '_' + min + '_' + sec + '_' + da + '_' + mo + '_' + yr);
   }
 }
