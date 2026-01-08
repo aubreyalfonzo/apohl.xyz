@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POHL_RACING_LIVERY_GENERATOR_TEST_001</title>
+	<meta charset="utf-8">
+	<!-- Compiled w/ P5LIVE, http://github.com/ffd8/p5live -->
+	<style type="text/css">
+		body{
+			margin:0;
+			overflow:hidden;
+		}
+		canvas{
+			position:fixed;
+			top:0;
+			left:0;
+			z-index:-1;
+			width:100vw;
+			height:100vh;
+			margin:0;
+		}
+	</style>
+	<script type="text/javascript">
+		// eco-mode = only render if window focused
+		window.onblur = function () {
+			noLoop();
+		};
+		window.onfocus = function () {
+			loop();
+		};
+	</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/processing/p5.js-sound/lib/p5.sound.min.js"></script>
+</head>
+<body style="background: rgb(0, 0, 0);">
+
+<script type="text/javascript">
+//POHL_RACING_LIVERY_GENERATOR_TEST_001
+
+/* CUSTOM FUNCTIONS FOR P5LIVE */
+// keep fullscreen if window resized
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
+
+// custom ease function
+function ease(iVal, oVal, eVal){
+	return oVal += (iVal - oVal) * eVal;
+}
+
+// processing compatibility
+function println(msg){
+	print(msg);
+}
+
+
+let data;
+let datamod;
+let ran1, ran2, ran3, ran4, ran5, ran6, ran7;
+
+let fc;
+
+function setup() {
+	ran1 = random(200);
+	ran2 = random(200);
+	ran3 = random(200);
+	ran4 = random(5, 50);
+	ran5 = random(width);
+	ran6 = random(10, 100);
+	ran7 = random(250, 500);
+	
+	createCanvas(windowWidth, windowHeight);
+	background(ran1,ran2,ran3);
+	// rectMode(CENTER);
+
+	fill(ran3, ran1, ran2);
+	noStroke();
+	// stroke(255);
+
+	data = ran4;
+	datamod = ran5;
+
+	fc = 1;
+}
+
+function draw() {
+	// background(200);
+
+	fc = fc + 1;
+
+	println(fc);
+
+	// if(fc > 1000) {
+	// 	fc = 0;
+	// }
+	push();
+	// fill(25);
+	for(let i = 0; i < data+1; i++) {
+
+		let m = map(i, 0, data, 0, width);
+		let m2 = map(i, 0, data, width, 0);
+
+		let manip = sin(fc*(.0005)*i)*500;
+		// let manip = 100;
+
+		rect(m + datamod, height / 2, ran6, manip);
+		rect(m2 - datamod, height / 2, ran6, -manip);
+	}
+	pop();
+	
+	push();
+	blendMode(DIFFERENCE);
+	fill(255);
+	for(let i = 0; i < data*2; i++) {
+
+		let m = map(i, 0, data, 0, width/2);
+		let m2 = map(i, 0, data, width, width/2);
+
+		let manip = sin(fc*(.0001)*i)*ran7;
+		// let manip = 100;
+
+		rect(m + datamod, height / 2, ran6, manip);
+		rect(m2 - datamod, height / 2, ran6, -manip);
+	}
+	pop();
+	
+	if(fc > 5000){
+		fc = -fc;
+	}else{
+		fc = fc;
+	}
+
+}
+
+function keyPressed(){
+	
+	if(key === ' '){
+		save('pohl_racing_livery_pattern' + '_' + day() + '_' + year() + '_' + minute() + '_' + second() + '_' + '.jpg');
+	}
+}
+
+
+</script>
+
+</body>
+</html>
